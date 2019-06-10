@@ -6,8 +6,4 @@ public class Diamante extends Material {
 	}
 	
 	
-	@Override
-	public void usar(Herramienta herramienta) {
-		herramienta.usarContra(this);
-	}
 }

@@ -5,30 +5,30 @@ public abstract class Hacha extends Herramienta{
 	public abstract void desgastar();
 
 	@Override
-	public void usarContra(Madera madera) {
+	public void usar(Madera madera) {
 		madera.recibirDanio(fuerza);
 		this.desgastar();
 	}
 	
 	@Override
-	public void usarContra(Metal metal) {
+	public void usar(Metal metal) {
 		this.desgastar();
 	}
 
 	@Override
-	public void usarContra(Piedra piedra) {
+	public void usar(Piedra piedra) {
 		this.desgastar();
 		
 	}
 	
 	@Override
-	public void usarContra(Diamante diamante) {
+	public void usar(Diamante diamante) {
 		this.desgastar();
 		
 	}
 	
 	@Override
-	public void usarContra(Material material) {
+	public void usar(Material material) {
 		try {
 			throw new NoConozcoElMaterialException();
 		} catch (NoConozcoElMaterialException e) {
@@ -37,7 +37,7 @@ public abstract class Hacha extends Herramienta{
 		
 	}
 
-	
+	//asasas
 	
 	
 

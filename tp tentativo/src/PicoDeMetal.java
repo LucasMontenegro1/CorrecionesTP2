@@ -17,7 +17,7 @@ public class PicoDeMetal extends Pico {
 	}
 
 	@Override
-	public void usarContra(Metal metal) {
+	public void usar(Metal metal) {
 		this.desgastar();
 		metal.recibirDanio(fuerza);
 	}

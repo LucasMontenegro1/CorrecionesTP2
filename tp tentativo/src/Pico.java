@@ -5,7 +5,7 @@ public abstract class Pico extends Herramienta {
 	public abstract void desgastar();
 
 	@Override
-	public void usarContra(Material material) {
+	public void usar(Material material) {
 		try {
 			throw new NoConozcoElMaterialException();
 		} catch (NoConozcoElMaterialException e) {
@@ -14,22 +14,22 @@ public abstract class Pico extends Herramienta {
 	}
 
 	@Override
-	public void usarContra(Madera madera) {
+	public void usar(Madera madera) {
 		this.desgastar();
 	}
 
 	@Override
-	public void usarContra(Piedra piedra) {
+	public void usar(Piedra piedra) {
 		this.desgastar();
 		piedra.recibirDanio(fuerza);
 	}
 	
 	@Override
-	public abstract void usarContra(Metal metal);
+	public abstract void usar(Metal metal);
 	
 	
 	@Override
-	public  void usarContra(Diamante diamante) {
+	public  void usar(Diamante diamante) {
 		this.desgastar();
 	}
 }

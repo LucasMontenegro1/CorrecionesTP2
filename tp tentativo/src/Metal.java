@@ -5,8 +5,5 @@ public class Metal extends Material {
 		this.durabilidad=50;
 	}
 	
-	@Override
-	public void usar(Herramienta herramienta) {
-		herramienta.usarContra(this);
-	}
+
 }

@@ -12,23 +12,23 @@ public class PicoFino extends Herramienta {
 	}
 
 	@Override
-	public void usarContra(Material material) {	
+	public void usar(Material material) {	
 
 	}
 	@Override
-	public void usarContra(Madera madera) {
+	public void usar(Madera madera) {
 	}
 
 	@Override
-	public void usarContra(Metal metal) {
+	public void usar(Metal metal) {
 	}
 
 	@Override
-	public void usarContra(Piedra piedra) {
+	public void usar(Piedra piedra) {
 	}
 
 	@Override
-	public void usarContra(Diamante diamante) {
+	public void usar(Diamante diamante) {
 		this.desgastar();
 		diamante.recibirDanio(fuerza);
 	}

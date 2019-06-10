@@ -5,9 +5,5 @@ public class Madera extends Material {
 		durabilidad=10;
 	}
 	
-	@Override
-	public void usar(Herramienta herramienta) {
-		herramienta.usarContra(this);
-	}
 
 }

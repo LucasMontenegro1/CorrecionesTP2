@@ -12,10 +12,6 @@ public class PicoFino extends Herramienta {
 	}
 
 	@Override
-	public void usar(Material material) {	
-
-	}
-	@Override
 	public void usar(Madera madera) {
 	}
 

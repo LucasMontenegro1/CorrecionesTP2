@@ -5,15 +5,6 @@ public abstract class Pico extends Herramienta {
 	public abstract void desgastar();
 
 	@Override
-	public void usar(Material material) {
-		try {
-			throw new NoConozcoElMaterialException();
-		} catch (NoConozcoElMaterialException e) {
-			e.printStackTrace();
-		}	
-	}
-
-	@Override
 	public void usar(Madera madera) {
 		this.desgastar();
 	}

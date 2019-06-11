@@ -9,8 +9,6 @@ public abstract class Herramienta implements Desgastable {
 	
 	public abstract void desgastar();
 	
-	
-	public abstract void usar(Material material);
 	public abstract void usar(Madera madera);
 	public abstract void usar(Metal metal);
 	public abstract void usar(Piedra piedra);

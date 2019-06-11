@@ -27,18 +27,5 @@ public abstract class Hacha extends Herramienta{
 		
 	}
 	
-	@Override
-	public void usar(Material material) {
-		try {
-			throw new NoConozcoElMaterialException();
-		} catch (NoConozcoElMaterialException e) {
-			e.printStackTrace();
-		}
-		
-	}
-
-	//asasas
-	
-	
 
 }
